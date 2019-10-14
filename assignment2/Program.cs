@@ -8,21 +8,21 @@ namespace assignment2
         public static void Main(string[] args)
         {
 
-
             //read in snake names and cat names from file
+            /*
+             *
             String[] snakenames = File.ReadAllLines("snakenames.txt");
 
             Snake snake1 = new Snake(snakenames[0], 1, 24, 12, 7, 230, 49);
 
             snake1.ToString();
 
+    */
+
+
+
+            ArrayList<T> al1 = new ArrayList<T>(10);
         }
-
-
-
-
-
-
 
 
     }

@@ -70,7 +70,7 @@ public class ArrayList<T>
         //this method takes in two array lists and returns a 3rd unsorted which is the first 2 unsorted
         public static ArrayList Merge(ArrayList al1, ArrayList al2)
         {
-            ArrayList al3 = new ArrayList(20);
+            ArrayList<T> al3 = new ArrayList<T>();
             al3.();
             foreach (var item in al1)
             {

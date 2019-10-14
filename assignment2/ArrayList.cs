@@ -41,9 +41,9 @@ public class ArrayList<T>
         public void Append(T value)
         {
 
-            for (int i = 0; array.GetValue(i + 1) == null; i++)
+            for (int i = 0; array[i + 1] == null; i++)
             {
-                if (array.GetValue(i + 1) == null)
+                if (array[i + 1] == null)
                 {
                     array[i + 1] = value;
                 }
@@ -64,6 +64,14 @@ public class ArrayList<T>
         {
             
         }
+        //This method deletes the last element in the array
+        public void DeleteLast()
+        {
+            for (int i = 0; array[i + 1] == null; i++)
+            {
+                array[i] = null;
+            }
+        }
 
         //returns string of array list
         public String PrintAllForward()
@@ -71,7 +79,7 @@ public class ArrayList<T>
             string arrayList = "";
             for (int i = 0; i < array.Length; i++)
             {
-                arrayList += array.GetValue(i);
+                arrayList += array[i];
             }
             return arrayList;
 
@@ -82,7 +90,7 @@ public class ArrayList<T>
             string arrayListBackwards = "";
             for (int i = array.Length - 1; i >= 0; i--)
             {
-                arrayListBackwards += array.GetValue(i);
+                arrayListBackwards += array[i];
             }
             return arrayListBackwards;
         }
@@ -105,21 +113,7 @@ public class ArrayList<T>
         //This adds to the last index, calls grow if it needs to
         
       
-        //this sorts the array without making a new array, using built in sorting
-        public void InPlaceSort()
-        {
-
-        }
-        //This method swaps the position of two elements in list
-        public void Swap(int index1, int index2)
-        {
-
-        }
-        //This method delets the last element
-        public void deleteLast()
-        {
-
-        }
+   
         //this method takes in two array lists and returns a 3rd unsorted which is the first 2 unsorted
         public static ArrayList Merge(ArrayList al1, ArrayList al2)
         {
@@ -131,22 +125,3 @@ public class ArrayList<T>
             }
             return al3;
         }
-        //This returns a string that is the whole structure 
-        public string StringPrintAllForward()
-        {
-            return null;
-
-        }
-        //This returns a string of the whole arraylist but backwards
-        public string StringPrintAllReverse()
-        {
-            return null;
-        }
-        //This deletes all values from the array
-        public void DeleteAll()
-        {
-
-        }
-    }
-
-}

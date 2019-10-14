@@ -15,17 +15,9 @@ public class ArrayList<T>
             array = new T[size + 1];
         }
 
-        
-
-
-
-
-        public void PrintAll()
-        {
-            for (int i = 0; i < array.Length; i++)
-
-                Console.WriteLine(array.GetValue(i));
-        }
+        //METHODS FOR ARRAY LIST
+        //
+        //
         public void Create(int size)
         {
             array = new T[size + 1];

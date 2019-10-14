@@ -61,7 +61,7 @@ public class ArrayList<T>
         {
             for (int i = 0; array[i + 1] == null; i++)
             {
-                array[i] = null; //Throwing error that cannot convert null to type parameter 'T' {wack}
+                array[i] = null; //Throwing error that cannot convert null to type parameter 'T' 
             }
         }
 

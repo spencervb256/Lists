@@ -15,20 +15,6 @@ public class ArrayList<T>
             array = new T[size + 1];
         }
 
-        public T getItem(int index)
-        {
-            return array[index];
-        }
-
-        public void setItem(int index, T value)
-        {
-            if (index >= array.Length)
-            {
-                Grow(array.Length * 2);
-            }
-            array[index] = value;
-        }
-
         
 
 
@@ -38,7 +24,7 @@ public class ArrayList<T>
         {
             for (int i = 0; i < array.Length; i++)
 
-                Console.WriteLine(getItem(i));
+                Console.WriteLine(array.GetValue(i));
         }
         public void Create(int size)
         {
@@ -85,7 +71,7 @@ public class ArrayList<T>
             string arrayList = "";
             for (int i = 0; i < array.Length; i++)
             {
-                arrayList += getItem(i);
+                arrayList += array.GetValue(i);
             }
             return arrayList;
 
@@ -96,7 +82,7 @@ public class ArrayList<T>
             string arrayListBackwards = "";
             for (int i = array.Length - 1; i >= 0; i--)
             {
-                arrayListBackwards += getItem(i);
+                arrayListBackwards += array.GetValue(i);
             }
             return arrayListBackwards;
         }

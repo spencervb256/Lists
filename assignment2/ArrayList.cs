@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace assignment2
 {
 
@@ -61,11 +62,23 @@ public class ArrayList<T>
         {
             for (int i = 0; array[i + 1] == null; i++)
             {
-                array[i] = null; //Throwing error that cannot convert null to type parameter 'T'
+                array[i] = default (T); //Throwing error that cannot convert null to type parameter 'T'
 
                 //wack
             }
         }
+        //this method takes in two array lists and returns a 3rd unsorted which is the first 2 unsorted
+        public static ArrayList Merge(ArrayList al1, ArrayList al2)
+        {
+            ArrayList al3 = new ArrayList(20);
+            al3.();
+            foreach (var item in al1)
+            {
+
+            }
+            return al3;
+        }
+
 
         //returns string of array list
         public String PrintAllForward()
@@ -108,14 +121,4 @@ public class ArrayList<T>
         
       
    
-        //this method takes in two array lists and returns a 3rd unsorted which is the first 2 unsorted
-        public static ArrayList Merge(ArrayList al1, ArrayList al2)
-        {
-            ArrayList al3 = new ArrayList();
-            al3.Create();
-            foreach (var item in al1)
-            {
-
-            }
-            return al3;
-        }
+        

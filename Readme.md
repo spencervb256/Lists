@@ -24,7 +24,7 @@ Mobile Objects:
 	ArrayList: 
 	Create: this can create an empty list
 	Private Grow:  this should double the size of the array when it Grows
-	Append.  (assume that you can *only* append to add things), this adds at the last index, calls grow if needed… like the lab
+	Append.  (assume that you can *only* append to add things), this adds at the last index, calls grow if needed… like in the lab
 	InPlaceSort.  This should sort the array list in place without making a new Array, use built in array sorting for this for now.  
 	Swap(index1, index2): should swap the position of two elements in the array list
 	DeleteLast:  Should delete the last element.  

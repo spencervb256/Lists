@@ -70,8 +70,7 @@ public class GenericArray<T>
         //this method takes in two array lists and returns a 3rd unsorted which is the first 2 unsorted
         public static GenericArray<T> Merge(GenericArray<T> al1, GenericArray<T> al2)
         {
-            int biggestArray = ((al1.array.Length > al2.array.Length ? al1.array.Length : al2.array.Length));
-            GenericArray<T> al3 = new GenericArray<T>(biggestArray);
+            GenericArray<T> al3 = new GenericArray<T>(al1.array.Length + al2.array.Length);
             foreach (var item in al1.array)
             {
                 al3.Append(item);

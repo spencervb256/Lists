@@ -111,12 +111,14 @@ namespace assignment2
         //Prints the list forward
         public String PrintAllForward()
         {
-            return "";
+            String forward = "";
+            return forward;
         }
         //Prints the list backwards
         public String PrintAllReverse()
         {
-            return "";
+            string backwards = "";
+            return backwards;
         }
 
     }

@@ -83,9 +83,23 @@ namespace assignment2
         //Keep track of size of list, generate random # up to that size, insert at that position in list
         public void InsertAtRandomLocation(Object data) 
         {
-            int listSizse
             Random random = new Random();
-            int randomNum = random.Next(1, )
+            int randomNum = random.Next(1, count);
+            Node current = head;
+
+            tail.data = data;
+            //find the position, and swap it with the tail
+            for (int i = 0; i < randomNum; i++)
+            {
+                current.previous = current;
+                current.next = current.next.next;
+
+            }
+            //swap the data of current node with data of tail node
+            Node temp = new Node();
+            temp.data = current.data;
+            current.data = tail.data;
+            tail.data = temp;
 
         }
         //This method merges another list onto the calling one at the end (and update count)

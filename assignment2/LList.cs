@@ -12,6 +12,7 @@ namespace assignment2
     {
         private Node head;
         private Node tail;
+        private int count = 0;
 
 
         //This adds a new node at the head
@@ -23,6 +24,7 @@ namespace assignment2
             toAdd.next = head;
 
             head = toAdd;
+            count += 1;
         }
         //This adds a new node to the tail
         public void AddLast(Object data)
@@ -45,6 +47,7 @@ namespace assignment2
                 }
                 current.next = toAdd;
             }
+            count += 1;
         }
         //*This gets the count of the lis
         //*Should be O(1) so need to track count in other methods

@@ -4,6 +4,9 @@ namespace assignment2
     public class Grid
     {
 
+        //Replace your Grid class from A1 with a multi dimensional array list (which you’ve implemented yourself)
+        //.....still of cells, and replace your list of mobile objects with a doubly linked list you implement yourself.  
+
         //This is a 10 by 10 grid of cells, implemented in a multidimensional ArrayList
         //TODO : change the gridArray to multidimensional ArrayList
 

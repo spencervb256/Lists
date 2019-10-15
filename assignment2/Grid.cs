@@ -9,10 +9,14 @@ namespace assignment2
         GenericArray<T> gridArray = new GenericArray<T>(10); //type or namespace "T" could not be found
 
         //ArrayList to hold cells
-        public GenericArray<T> cellsArray = new GenericArray<T>(10);
+        public GenericArray<T> cellsArray = new GenericArray<T>(10); WACK
 
         gridArray[1] = cellsArray[1]; //beginning of the 2d array
-        //
+        /// <summary>
+        /// //
+        ///
+        /// 
+        /// </summary>
 
 
 

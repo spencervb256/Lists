@@ -12,7 +12,7 @@ namespace assignment2
         public GenericArray<T> cellsArray = new GenericArray<T>(10);
 
         gridArray[1] = cellsArray[1]; //beginning of the 2d array
-
+        //
 
 
 

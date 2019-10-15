@@ -31,19 +31,19 @@ public class GenericArray<T>
         }
 
         //this adds to the last index, calls grow if it needs to
-        public void Append(T value)
+        public void Append(T Object)
         {
 
-            for (int i = 0; array[i + 1] == null; i++)
+            for (int i = 0; array[i + 1] == default; i++)
             {
-                if (array[i + 1] == null)
+                if (array[i + 1] == default)
                 {
-                    array[i + 1] = value;
+                    array[i + 1] = Object;
                 }
                 if (i >= array.Length)
                 {
                     Grow(array.Length * 2);
-                    array[i + 1] = value;
+                    array[i + 1] = Object;
                 }
             }
         }
@@ -60,7 +60,7 @@ public class GenericArray<T>
         //This method deletes the last element in the array
         public void DeleteLast()
         {
-            for (int i = 0; array[i + 1] == null; i++)
+            for (int i = 0; array[i + 1] == default; i++)
             {
                 array[i] = default (T);
 

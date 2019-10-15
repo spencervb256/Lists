@@ -1,20 +1,24 @@
 ﻿using System;
+using System;
 namespace assignment2
 {
     public class Grid
     {
+        //ArrayList to hold arrays
 
-        //Replace your Grid class from A1 with a multi dimensional array list (which you’ve implemented yourself)
-        //.....still of cells, and replace your list of mobile objects with a doubly linked list you implement yourself.  
+        GenericArray<T> gridArray = new GenericArray<T>(10); //type or namespace "T" could not be found
 
-        //This is a 10 by 10 grid of cells, implemented in a multidimensional ArrayList
-        //TODO : change the gridArray to multidimensional ArrayList
+        //ArrayList to hold cells
+        public GenericArray<T> cellsArray = new GenericArray<T>(10);
 
-        public Cell GenericArray gridArray = new GenericArray(10) { }
+        gridArray[1] = cellsArray[1]; //beginning of the 2d array
 
 
-        public void Create()
+
+
+        public void generateGrid()
         {
+
             int n = 0;
             int m = 0;
 
@@ -25,10 +29,8 @@ namespace assignment2
                 {
 
 
-                    //generate grid of cells
-                    gridArray[i, j] = new Cell(10, 10);
-
-                    //change this to be a multi dimensional array list, don't need Id's anymore
+                    //Create Grid of cells, height 10, and width 10, with id's in consecutive ascending order
+                    gridArray[i, j] = new Cell(i * 10 + j + 1, 10, 10);
 
 
 
@@ -36,7 +38,6 @@ namespace assignment2
                 }
             }
         }
-
 
     }
 }

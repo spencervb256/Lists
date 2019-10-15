@@ -5,19 +5,23 @@ bsrivastava@trentu.ca
 Programming Question
 As with A1, please put testing for each method listed in a Word (or similar) document along with your theory answers.  
 In Assignment 1 you created an Array and a Linked List using built in arrays and linked lists of Mobile Objects which you defined yourself.
+
 In this assignment, you are to build your own ArrayList and a DOUBLY Linked List based on the labs
 Replace your Grid class from A1 with a multi dimensional array list (which you’ve implemented yourself) – still of cells, and replace your list of mobile objects with a doubly linked list you implement yourself.  
+
 You can make other methods you need as well, you need to develop a test case to show how each works and relevant edge cases, but you must have the following (some are from the labs obviously).  
 
 If needed for the sake of ease of presentation or convenience you can trim down on the number of objects or their sets of properties etc.  
 Mobile Objects:
+	
 	Modify your mobile objects to have a public abstract ‘toString’ method which creates a string which could then be printed by the calling method that displays all properties of the object.  E.g. Console.WriteLine(mob1.toString()); (You’ll need to override this in the cat and snake subclasses)
+
 
 	Make a variant of toString called toStringS, as in toString, shortened – which prints only a couple of properties of the object, most likely just name and ID but use this method to reduce screen clutter, you can decide which are the key properties.  
 
 
  
-ArrayList: 
+	ArrayList: 
 	Create: this can create an empty list
 	Private Grow:  this should double the size of the array when it Grows
 	Append.  (assume that you can *only* append to add things), this adds at the last index, calls grow if needed… like the lab
@@ -31,8 +35,8 @@ ArrayList:
 
 
 
-Doubly Linked List:
-This should have a head and a tail node, and nodes should have references to both next and previous. 
+	Doubly Linked List:
+	This should have a head and a tail node, and nodes should have references to both next and previous. 
 	Create: Creates an empty list
 	AddFront:  Adds a new node at the head
 	AddLast:  Adds a new node at the tail
@@ -40,8 +44,8 @@ This should have a head and a tail node, and nodes should have references to bot
 	InsertAtRandomLocation (keep track of the size of the list, generate a random # up to that size, insert at that position in the list)
 	Merge, unlike ArrayList this should be a method of a single list and should merge another list onto the calling one at the end (and update the count correctly)
 	FindClosest():  Searches (brute force) returns the closest object to the one which calls this method.  The equation for distance between two points is: 
-√((〖x_1-x_2)〗^2+(〖y_1-y_2)〗^2+(〖z_1-z_2)〗^2 )
-But obviously you don’t actually need to compute the square root to simply find which one is closest.  
+	√((〖x_1-x_2)〗^2+(〖y_1-y_2)〗^2+(〖z_1-z_2)〗^2 )
+	But obviously you don’t actually need to compute the square root to simply find which one is closest.  
 
 	DeleteFirst
 	DeleteLast

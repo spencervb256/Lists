@@ -3,7 +3,7 @@
 namespace assignment2
 {
 
-public class ArrayList<T>
+public class GenericArray<T>
 {
         //start of ArrayList implementation
 
@@ -11,7 +11,7 @@ public class ArrayList<T>
         private T[] array;
 
         //Constructor
-        public ArrayList(int size)
+        public GenericArray(int size)
         {
             array = new T[size + 1];
         }
@@ -62,18 +62,23 @@ public class ArrayList<T>
         {
             for (int i = 0; array[i + 1] == null; i++)
             {
-                array[i] = default (T); //Throwing error that cannot convert null to type parameter 'T'
+                array[i] = default (T);
 
                 //wack
             }
         }
         //this method takes in two array lists and returns a 3rd unsorted which is the first 2 unsorted
-        public static ArrayList Merge(ArrayList al1, ArrayList al2)
+        public static GenericArray<T> Merge(GenericArray<T> al1, GenericArray<T> al2)
         {
-            ArrayList<T> al3 = new ArrayList<T>();
-            al3.();
-            foreach (var item in al1)
+            int biggestArray = ((al1.array.Length > al2.array.Length ? al1.array.Length : al2.array.Length));
+            GenericArray<T> al3 = new GenericArray<T>(biggestArray);
+            foreach (var item in al1.array)
             {
+                al3.Append(item);
+            }
+            foreach (var item in al2.array)
+            {
+                al3.Append(item);
 
             }
             return al3;
@@ -105,19 +110,6 @@ public class ArrayList<T>
 
     }
 }
-
-
-
-
-
-
-//methods for ArrayList
-
-
-//This creates an empty array list
-        //This doubles the size of the array when it grows
-        
-        //This adds to the last index, calls grow if it needs to
         
       
    

@@ -21,7 +21,7 @@ namespace assignment2
 
 
 
-            ArrayList<T> al1 = new ArrayList<T>(10);
+            GenericArray<T> al1 = new GenericArray<T>(10);
         }
 
 

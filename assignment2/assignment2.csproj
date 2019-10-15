@@ -37,7 +37,8 @@
     <Compile Include="MobileObject.cs" />
     <Compile Include="Snake.cs" />
     <Compile Include="Cat.cs" />
-    <Compile Include="ArrayList.cs" />
+    <Compile Include="GenericArray.cs" />
+    <Compile Include="LList.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

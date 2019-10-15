@@ -105,7 +105,17 @@ namespace assignment2
         //This method merges another list onto the calling one at the end (and update count)
         public void Merge(LList list1)
         {
+            while (list1.head.next != null)
+            {
+                //add the head of list1 onto the tail of current linked list
+                tail.next = list1.head;
+                //sets new tail on list
+                tail = tail.next;
+                //sets new head of list1
+                list1.head = list1.head.next;
 
+                count += 1;
+            }
         }
         //Searches (brute forces) and returns the closest object to the one which calls this method
         public Object FindClosest(Object obj)
@@ -115,23 +125,47 @@ namespace assignment2
         //Deletes first element in list
         public void DeleteFirst()
         {
+            head.data = null;
+            head.next = head;
 
         }
         //Deletes Last element in the list
         public void DeleteLast()
         {
-
+            tail.data = null;
+            tail.previous = tail;
         }
         //Prints the list forward
         public String PrintAllForward()
         {
             String forward = "";
+            Node current = new Node();
+            current = head;
+
+
+            for (int i = 0; i <= count; i++)
+            {
+                forward = (string)current.data;
+                current = current.next;
+
+            }
+            
             return forward;
         }
         //Prints the list backwards
         public String PrintAllReverse()
         {
             string backwards = "";
+            Node current = new Node();
+            current = tail;
+
+            for (int i = count; i >= 0; i--)
+            {
+                backwards = (string)current.data;
+                current = current.previous;
+
+            }
+
             return backwards;
         }
 

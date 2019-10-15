@@ -4,7 +4,10 @@ namespace assignment2
     public class Grid
     {
 
-        public Cell[,] gridArray = new Cell[10, 10];
+        //This is a 10 by 10 grid of cells, implemented in a multidimensional ArrayList
+        //TODO : change the gridArray to multidimensional ArrayList
+
+        public Cell [,] gridArray = new Cell[10, 10];
 
 
         public void Create()

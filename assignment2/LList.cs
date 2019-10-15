@@ -57,6 +57,37 @@ namespace assignment2
         {
 
         }
+        //This method merges another list onto the calling one at the end (and update count)
+        public void Merge(LList list1)
+        {
+
+        }
+        //Searches (brute forces) and returns the closest object to the one which calls this method
+        public Object FindClosest(Object obj)
+        {
+            return null;
+        }
+        //Deletes first element in list
+        public void DeleteFirst()
+        {
+
+        }
+        //Deletes Last element in the list
+        public void DeleteLast()
+        {
+
+        }
+        //Prints the list forward
+        public String PrintAllForward()
+        {
+            return "";
+        }
+        //Prints the list backwards
+        public String PrintAllReverse()
+        {
+            return "";
+        }
+
     }
 }
 

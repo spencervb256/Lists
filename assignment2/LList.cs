@@ -8,13 +8,13 @@ namespace assignment2
         public Node previous;
         public Object data;
     }
-    public class LList
+    public class DoublyLinkedList
     {
         private Node head;
         private Node tail;
         private int count;
 
-        public LList(int count)
+        public DoublyLinkedList(int count)
         {
             this.count = count;
 
@@ -103,7 +103,7 @@ namespace assignment2
 
         }
         //This method merges another list onto the calling one at the end (and update count)
-        public void Merge(LList list1)
+        public void Merge(DoublyLinkedList list1)
         {
             while (list1.head.next != null)
             {

@@ -12,57 +12,80 @@ namespace assignment2
     {
         private Node head;
         private Node tail;
-        private int count = 0;
+        private int count;
 
         public LList(int count)
         {
             this.count = count;
+
         }
 
 
         //This adds a new node at the head
         public void AddFront(Object data)
         {
-            Node toAdd = new Node();
 
-            toAdd.data = data;
-            toAdd.next = head;
+            if (head == null)
+            {
+                // First node. Head and Tail now point to the one and only node (set to contain data)
 
-            head = toAdd;
-            count += 1;
+                head = new Node() { data = data };
+                tail = head;
+            }
+            else
+            {
+                // New node becomes new Head of list
+
+                var oldHead = head;
+
+                // Head now points to new node containing data
+                head = new Node()
+                {
+                    data = data,
+                    next = oldHead // points to what used to be the Head (now 2nd in list)
+                };
+                // Node that used to be the Head now points back to new Head
+                oldHead.previous = head;
+            }
+            
         }
         //This adds a new node to the tail
         public void AddLast(Object data)
         {
             if (head == null)
             {
-                head = new Node();
+                head = new Node() { data = data };
                 head.data = data;
                 head.next = null;
             }
             else
             {
-                Node toAdd = new Node();
-                toAdd.data = data;
+                //new Node becomes tail of list
+                var oldTail = tail;
 
-                Node current = head;
-                while (current.next != null)
+                //tail now points to new node containing data
+                tail = new Node()
                 {
-                    current = current.next;
-                }
-                current.next = toAdd;
+                    data = data,
+                    previous = oldTail
+
+
+                };
             }
             count += 1;
         }
-        //*This gets the count of the lis
+        //*This gets the count of the list
         //*Should be O(1) so need to track count in other methods
         public int GetCount()
         {
-            return -1;
+            return count;
         }
         //Keep track of size of list, generate random # up to that size, insert at that position in list
         public void InsertAtRandomLocation(Object data) 
         {
+            int listSizse
+            Random random = new Random();
+            int randomNum = random.Next(1, )
 
         }
         //This method merges another list onto the calling one at the end (and update count)

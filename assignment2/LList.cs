@@ -14,6 +14,11 @@ namespace assignment2
         private Node tail;
         private int count = 0;
 
+        public LList(int count)
+        {
+            this.count = count;
+        }
+
 
         //This adds a new node at the head
         public void AddFront(Object data)

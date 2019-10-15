@@ -5,17 +5,17 @@ namespace assignment2
     public class Node
     {
         public Node next;
-        //  public Node previous;
+        public Node previous;
         public Object data;
     }
     public class LList
     {
         private Node head;
-        // private Node tail;
+        private Node tail;
 
 
         //This adds a new node at the head
-        public void AddFirst(Object data)
+        public void AddFront(Object data)
         {
             Node toAdd = new Node();
 

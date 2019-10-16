@@ -20,6 +20,16 @@ namespace assignment2
 
         }
 
+        public void printAllNodes()
+        {
+            Node current = head;
+            while (current != null)
+            {
+                Console.WriteLine(current.data);
+                current = current.next;
+            }
+        }
+
 
         //This adds a new node at the head
         public void AddFront(Object data)
@@ -120,7 +130,17 @@ namespace assignment2
         //Searches (brute forces) and returns the closest object to the one which calls this method
         public Object FindClosest(Object obj)
         {
-            return null;
+            int distanceFromUp = 0;
+            for (int i = 0; i < count; i++)
+            {
+                if (i.Equals(obj))
+                {
+                    for (int j =0; j.Equals(null) != true; j++)
+                    {
+                        distanceFromUp += 1;
+                    }
+                }
+            }
         }
         //Deletes first element in list
         public void DeleteFirst()

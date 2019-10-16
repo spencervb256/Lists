@@ -66,7 +66,7 @@ namespace assignment2
 
 
         //To string method
-        public override string ToString()
+        public abstract override string ToString()
         {
             string s = ("The name is : " + GetName() + " and the id is : " + getId());
             return s;

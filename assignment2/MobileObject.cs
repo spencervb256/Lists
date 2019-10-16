@@ -1,7 +1,7 @@
 ﻿using System;
 namespace assignment2
 {
-    public class MobileObject
+    public abstract class MobileObject
     {
         //Instance Variables
         string name;

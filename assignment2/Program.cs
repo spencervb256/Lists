@@ -39,7 +39,13 @@ namespace assignment2
             ll.AddLast(cat4);
             ll.AddLast(cat5);
 
+            ll.FindClosest(snake3);
+
+
+
             snake1.ToString();
+
+            ll.printAllNodes();
 
         }
 

@@ -130,17 +130,38 @@ namespace assignment2
         //Searches (brute forces) and returns the closest object to the one which calls this method
         public Object FindClosest(Object obj)
         {
-            int distanceFromUp = 0;
-            for (int i = 0; i < count; i++)
+            Node current;
+
+            current = head;
+
+            for (int i = 0; i < count ; i++)
             {
-                if (i.Equals(obj))
+                current.previous = current;
+                current = current.next.next;
+                
+                if (current.data == obj)
                 {
-                    for (int j =0; j.Equals(null) != true; j++)
-                    {
-                        distanceFromUp += 1;
-                    }
+                    break;
                 }
             }
+            for (int j = 0 ; tail.next == null; j++)
+            {
+                current = current.next;
+                if (current.data != null)
+                {
+                    return current.data;
+                }
+            }
+            for (int j = 0; head.previous == null; j--)
+            {
+                current = current.previous;
+                if (current.data != null)
+                {
+                    return current.data;
+                }
+            }
+            return null;
+
         }
         //Deletes first element in list
         public void DeleteFirst()

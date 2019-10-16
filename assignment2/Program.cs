@@ -28,9 +28,9 @@ namespace assignment2
             //Add those snakes and cats into a doubly linked list
             DoublyLinkedList ll = new DoublyLinkedList(0);
             ll.AddFront(snake1);
-            ll.AddLast(snake2);
+            ll.AddLast(null);
             ll.AddLast(snake3);
-            ll.AddLast(snake4);
+            ll.AddLast(null);
             ll.AddLast(snake5);
 
             ll.AddLast(cat1);

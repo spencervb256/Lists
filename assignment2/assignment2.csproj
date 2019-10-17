@@ -39,6 +39,8 @@
     <Compile Include="Cat.cs" />
     <Compile Include="GenericArray.cs" />
     <Compile Include="LList.cs" />
+    <Compile Include="ArrayAdding.cs" />
+    <Compile Include="ArrayAddingSorted.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

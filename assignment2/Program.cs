@@ -5,8 +5,15 @@ namespace assignment2
 {
     class MainClass
     {
+
+        //For a given array, this finds all possible continuous sub arrays with a sum less than k
+        public void SubArrays(Array array1)
+        {
+
+        }
         public static void Main(string[] args)
         {
+            
 
             /*
              String[] snakenames = File.ReadAllLines("snakenames.txt");
@@ -50,7 +57,7 @@ namespace assignment2
              ll.printAllNodes();
 
     */
-
+            
      
             ArrayAdding a = new ArrayAdding();
             a.Create(8);
@@ -58,7 +65,20 @@ namespace assignment2
             ArrayAddingSorted a1 = new ArrayAddingSorted();
             a1.Create(7);
 
+            int[] array1 = new int[10];
 
+            //Fill array 1 through 10
+            for (int i = 0; i < array1.Length; i++)
+            {
+                array1[i] = i + 1;
+            }
+            foreach (int i in array1)
+                Console.WriteLine(i);
+
+
+            SubArrays SA = new SubArrays();
+
+            SA.Find(array1, 6);
         }
 
 

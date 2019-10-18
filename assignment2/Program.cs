@@ -5,12 +5,6 @@ namespace assignment2
 {
     class MainClass
     {
-
-        //For a given array, this finds all possible continuous sub arrays with a sum less than k
-        public void SubArrays(Array array1)
-        {
-
-        }
         public static void Main(string[] args)
         {
             
@@ -60,10 +54,10 @@ namespace assignment2
             
      
             ArrayAdding a = new ArrayAdding();
-            a.Create(8);
+            a.add(3);
 
             ArrayAddingSorted a1 = new ArrayAddingSorted();
-            a1.Create(7);
+            a1.add(7);
 
             int[] array1 = new int[10];
 
@@ -72,13 +66,24 @@ namespace assignment2
             {
                 array1[i] = i + 1;
             }
+            int[] array2 = { 1, 2, 3, 4, 4, 3, 2, 1 };
+
+
+            Console.WriteLine("The array is : ");
+            Console.WriteLine();
             foreach (int i in array1)
                 Console.WriteLine(i);
 
 
+            Console.WriteLine();
             SubArrays SA = new SubArrays();
 
             SA.Find(array1, 6);
+
+            Console.WriteLine();
+            SearchMax search = new SearchMax();
+            search.FindMax(array2);
+            
         }
 
 

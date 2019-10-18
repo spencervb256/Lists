@@ -11,7 +11,7 @@ namespace assignment2
         //Given an integer x and an unsorted array of integers, write a program to determine whether two numbers
         //in the array add up to x
 
-        public string Create(int x)
+        public void add(int x)
         {
             Random random = new Random();
 
@@ -26,11 +26,11 @@ namespace assignment2
                 {
                     if (ints[i] + ints[j] == x)
                     {
-                        return "The two integers which add up to " + x + "are" + ints[i] + "and" + ints[j];
+                        Console.WriteLine("The two integers which add up to " + x + "are" + ints[i] + "and" + ints[j]);
                     }
                 }
             }
-            return "No two numbers add up to " + x;
+            Console.WriteLine("No two numbers add up to " + x);
 
         }
             

@@ -42,6 +42,7 @@
     <Compile Include="ArrayAdding.cs" />
     <Compile Include="ArrayAddingSorted.cs" />
     <Compile Include="SubArrays.cs" />
+    <Compile Include="SearchMax.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

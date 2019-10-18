@@ -56,6 +56,8 @@ namespace assignment2
             ArrayAdding a = new ArrayAdding();
             a.add(3);
 
+            Console.WriteLine();
+
             ArrayAddingSorted a1 = new ArrayAddingSorted();
             a1.add(7);
 

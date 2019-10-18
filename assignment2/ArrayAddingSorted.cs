@@ -27,12 +27,14 @@ namespace assignment2
                 if (ints[j] == difference)
                 {
 
-                    Console.WriteLine ("The two numbers which add up to " + x + "are " + ints[j] + "and " + (x - difference));
+                    Console.WriteLine("The two numbers which add up to " + x + "are " + ints[j] + "and " + (x - difference));
 
-                    
 
                 }
+                break;
             }
+            
+            
             Console.WriteLine("No two numbers add up to " + x);
 
         }

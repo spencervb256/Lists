@@ -11,25 +11,25 @@ namespace assignment2
                 return;
             }
             int size = a.Length;
-            int first_element = a[0];
-            int last_element = a[size - 1];
-            if (first_element + size - 1 == last_element || first_element - size + 1 == last_element)
+            int first = a[0];
+            int last = a[size - 1];
+            if (first + size - 1 == last || first - size + 1 == last)
             {
                 Console.WriteLine("No Local maximum or minimum");
                 return;
             }
-            if (first_element < a[1])
+            if (first < a[1])
             {
                 //lets find local maximum
-                int last_should_be = first_element + (size - 1);
-                int local_max = (last_should_be + last_element) / 2;
+                int lastShouldBe = first + (size - 1);
+                int local_max = (lastShouldBe + last) / 2;
                 Console.WriteLine("local maximum: " + local_max);
             }
             else
             {
                 //lets find local maximum
-                int last_should_be = first_element - (size - 1);
-                int local_min = (last_should_be + last_element) / 2;
+                int lastShouldBe = first - (size - 1);
+                int local_min = (lastShouldBe + last) / 2;
                 Console.WriteLine("local minimum: " + local_min);
             }
         }

@@ -28,6 +28,7 @@ namespace assignment2
                     {
                         Console.WriteLine("The two integers which add up to " + x + "are" + ints[i] + "and" + ints[j]);
                     }
+                    break;
                 }
             }
             Console.WriteLine("No two numbers add up to " + x);

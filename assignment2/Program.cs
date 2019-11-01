@@ -9,7 +9,7 @@ namespace assignment2
         {
             
 
-            /*
+            
              String[] snakenames = File.ReadAllLines("snakenames.txt");
              String[] catnames = File.ReadAllLines("catnames.txt");
 
@@ -29,9 +29,9 @@ namespace assignment2
              //Add those snakes and cats into a doubly linked list
              DoublyLinkedList ll = new DoublyLinkedList(0);
              ll.AddFront(snake1);
-             ll.AddLast(null);
+             ll.AddLast(snake2);
              ll.AddLast(snake3);
-             ll.AddLast(null);
+             ll.AddLast(snake4);
              ll.AddLast(snake5);
 
              ll.AddLast(cat1);
@@ -40,17 +40,17 @@ namespace assignment2
              ll.AddLast(cat4);
              ll.AddLast(cat5);
 
-             ll.FindClosest(snake3);
+             ll.PrintAllNodes();
 
 
 
-             snake1.ToString();
+           // Console.WriteLine("The closest object is : " + ll.FindClosest(snake3));
 
 
 
-             ll.printAllNodes();
+             //snake1.ToString();
 
-    */
+    
             
      
             ArrayAdding a = new ArrayAdding();

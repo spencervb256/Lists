@@ -20,7 +20,7 @@ namespace assignment2
 
         }
 
-        public void printAllNodes()
+        public void PrintAllNodes()
         {
             Node current = head;
             while (current != null)
@@ -39,7 +39,8 @@ namespace assignment2
             {
                 // First node. Head and Tail now point to the one and only node (set to contain data)
 
-                head = new Node() { data = data };
+                head = new Node();
+                head.data = data;
                 tail = head;
             }
             else
@@ -144,7 +145,7 @@ namespace assignment2
                     break;
                 }
             }
-            for (int j = 0 ; tail.next == null; j++)
+            for (int j = 0; tail.next == null; j++)
             {
                 current = current.next;
                 if (current.data != null)

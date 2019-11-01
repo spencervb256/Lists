@@ -15,10 +15,10 @@ namespace assignment2
 
         //ArrayList to hold arrays
 
-       // GenericArray<T> gridArray = new GenericArray<T>(10); //type or namespace "T" could not be found
+       GenericArray<int> gridArray = new GenericArray<int>(10);
 
         //ArrayList to hold cells
-        //public GenericArray<T> cellsArray = new GenericArray<T>(10); WACK
+     
 
        // gridArray[1] = cellsArray[1]; //beginning of the 2d array
         /// <summary>
@@ -44,7 +44,7 @@ namespace assignment2
 
 
                     //Create Grid of cells, height 10, and width 10, with id's in consecutive ascending order
-                  //  gridArray[i, j] = new Cell(i * 10 + j + 1, 10, 10);
+                    gridArray[gridArray.] = new Cell(i * 10 + j + 1, 10, 10);
 
 
 
